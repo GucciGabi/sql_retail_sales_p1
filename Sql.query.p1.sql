@@ -20,7 +20,16 @@ CREATE TABLE retail_sales
                 total_sale FLOAT
             );
 
---- Looking up fields with Null
+--- Quick Data Exploration and Looking up fields with Null
+
+SELECT COUNT(*)
+FROM retail_sales;
+
+SELECT COUNT(DISTINCT customer_id)
+FROM retail_sales;
+
+SELECT DISTINCT category
+FROM retail_sales;
 
 SELECT * 
 from dbo.retail_sales
@@ -161,3 +170,4 @@ group by Shift;
 
 
 ----End of project
+
