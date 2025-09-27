@@ -31,7 +31,7 @@ CREATE TABLE retail_sales
     customer_id INT,	
     gender VARCHAR(10),
     age INT,
-    category VARCHAR(35),
+    category VARCHAR(15),
     quantity INT,
     price_per_unit FLOAT,	
     cogs FLOAT,
@@ -47,9 +47,14 @@ CREATE TABLE retail_sales
 - **Null Value Check**: Check for any null values in the dataset and delete records with missing data.
 
 ```sql
-SELECT COUNT(*) FROM retail_sales;
-SELECT COUNT(DISTINCT customer_id) FROM retail_sales;
-SELECT DISTINCT category FROM retail_sales;
+SELECT COUNT(*)
+FROM retail_sales;
+
+SELECT COUNT(DISTINCT customer_id)
+FROM retail_sales;
+
+SELECT DISTINCT category
+FROM retail_sales;
 
 SELECT * FROM retail_sales
 WHERE 
