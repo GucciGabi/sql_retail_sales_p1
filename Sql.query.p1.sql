@@ -1,6 +1,24 @@
+--- SQL Retail Sales Analysis - P1
 
-SELECT count(*) 
-from dbo.retail_sales
+CREATE DATABASE sql_project_p1;
+
+--- Create TABLE
+
+DROP TABLE IF EXISTS retail_sales;
+CREATE TABLE retail_sales
+            (
+                transaction_id INT PRIMARY KEY,	
+                sale_date DATE,	 
+                sale_time TIME,	
+                customer_id	INT,
+                gender	VARCHAR(15),
+                age	INT,
+                category VARCHAR(15),	
+                quantity	INT,
+                price_per_unit FLOAT,	
+                cogs	FLOAT,
+                total_sale FLOAT
+            );
 
 --- Looking up fields with Null
 
@@ -140,5 +158,6 @@ from retail_sales
 select Shift, count(*) as 'Sales per Hour'
 from HourlySales
 group by Shift;
+
 
 ----End of project
