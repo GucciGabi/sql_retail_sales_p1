@@ -7,7 +7,7 @@
 This project is designed to demonstrate SQL skills and techniques typically used by data analysts to explore, clean, and analyze retail sales data. The project involves setting up a retail sales database, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries.
 
 ## Important Information
-This project was done inside of SMSS. If you are usin MySQL or PostGreSQL, your queries might look slightly different.
+This project was done inside of SMSS. If you are using MySQL or PostGreSQL, your queries might look slightly different.
 
 ## Objectives
 
